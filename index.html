@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caffwise — Legal</title>
+  <meta name="description" content="Privacy policy, terms of use and support for the Caffwise iOS app.">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // English unless the reader's browser prefers Turkish or the URL says ?lang=tr / #tr.
+    (function () {
+      var q = (location.search.match(/lang=(\w+)/) || [])[1] || location.hash.slice(1);
+      var pick = q === 'tr' || q === 'en' ? q : ((navigator.language || '').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+      document.documentElement.lang = pick;
+    })();
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2418"/><stop offset="1" stop-color="#140d0a"/></linearGradient>
+        <radialGradient id="c" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#f3dcc0"/><stop offset="1" stop-color="#c98d5a"/></radialGradient></defs>
+        <rect width="64" height="64" rx="15" fill="url(#g)"/>
+        <circle cx="32" cy="33" r="19" fill="#f6efe6"/>
+        <circle cx="32" cy="33" r="15" fill="url(#c)"/>
+        <path d="M36.5 25a8.5 8.5 0 1 0 0 16a10 10 0 1 1 0-16z" fill="#fff8ef" opacity=".92"/>
+        <circle cx="14" cy="13" r="1.4" fill="#ffe7c2"/><circle cx="51" cy="11" r="1" fill="#ffe7c2"/><circle cx="54" cy="52" r="1.2" fill="#ffe7c2"/>
+      </svg>
+      <div>
+        <div class="brand-name">Caffwise</div>
+        <div class="brand-sub">Caffeine Tracker</div>
+      </div>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en">EN</button>
+      <button type="button" data-set="tr">TR</button>
+    </div>
+  </header>
+
+  <article data-lang="en">
+    <h1>Legal</h1>
+    <p class="meta">The documents that apply when you use Caffwise.</p>
+    <div class="pick">
+      <a href="privacy/"><b>Privacy Policy</b><span>What the app collects, what stays on your device and in your iCloud, and the choices you have.</span></a>
+      <a href="terms/"><b>Terms of Use</b><span>Your licence, subscriptions, and what caffeine estimates can and cannot promise.</span></a>
+      <a href="support/"><b>Support</b><span>Answers to common questions, and how to reach us.</span></a>
+    </div>
+    <p style="margin-top:20px">Support: <a href="mailto:caffwiseapp@gmail.com">caffwiseapp@gmail.com</a></p>
+  </article>
+
+  <article data-lang="tr">
+    <h1>Yasal</h1>
+    <p class="meta">Caffwise’ı kullanırken geçerli olan belgeler.</p>
+    <div class="pick">
+      <a href="privacy/"><b>Gizlilik Politikası</b><span>Uygulamanın ne topladığı, nelerin cihazınızda ve iCloud’unuzda kaldığı ve seçenekleriniz.</span></a>
+      <a href="terms/"><b>Kullanım Koşulları</b><span>Lisansınız, abonelikler ve kafein tahminlerinin neyi vaat edip edemeyeceği.</span></a>
+      <a href="support/"><b>Destek</b><span>Sık sorulan sorular ve bize nasıl ulaşabileceğiniz.</span></a>
+    </div>
+    <p style="margin-top:20px">Destek: <a href="mailto:caffwiseapp@gmail.com">caffwiseapp@gmail.com</a></p>
+  </article>
+
+  <footer>© 2026 Doğukan Kamçı · Caffwise</footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function show(lang) {
+      document.documentElement.lang = lang;
+      document.title = lang === 'tr' ? 'Caffwise — Yasal' : 'Caffwise — Legal';
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === lang ? 'true' : 'false'); });
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        show(b.dataset.set);
+        try { history.replaceState(null, '', '#' + b.dataset.set); } catch (_) {}
+      });
+    });
+    show(document.documentElement.lang);
+  })();
+</script>
+</body>
+</html>

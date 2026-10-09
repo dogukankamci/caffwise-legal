@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caffwise Privacy Policy</title>
+  <meta name="description" content="How the Caffwise iOS app handles your data.">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // English unless the reader's browser prefers Turkish or the URL says ?lang=tr / #tr.
+    (function () {
+      var q = (location.search.match(/lang=(\w+)/) || [])[1] || location.hash.slice(1);
+      var pick = q === 'tr' || q === 'en' ? q : ((navigator.language || '').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+      document.documentElement.lang = pick;
+    })();
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2418"/><stop offset="1" stop-color="#140d0a"/></linearGradient>
+        <radialGradient id="c" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#f3dcc0"/><stop offset="1" stop-color="#c98d5a"/></radialGradient></defs>
+        <rect width="64" height="64" rx="15" fill="url(#g)"/>
+        <circle cx="32" cy="33" r="19" fill="#f6efe6"/>
+        <circle cx="32" cy="33" r="15" fill="url(#c)"/>
+        <path d="M36.5 25a8.5 8.5 0 1 0 0 16a10 10 0 1 1 0-16z" fill="#fff8ef" opacity=".92"/>
+        <circle cx="14" cy="13" r="1.4" fill="#ffe7c2"/><circle cx="51" cy="11" r="1" fill="#ffe7c2"/><circle cx="54" cy="52" r="1.2" fill="#ffe7c2"/>
+      </svg>
+      <div>
+        <div class="brand-name">Caffwise</div>
+        <div class="brand-sub">Caffeine Tracker</div>
+      </div>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en">EN</button>
+      <button type="button" data-set="tr">TR</button>
+    </div>
+  </header>
+
+  <article data-lang="en">
+    <a class="back" href="../">← Legal</a>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective date: October 9, 2026</div>
+
+    <p>This policy explains what information the Caffwise app (“the app”, “we”, “us”) collects, why, and the choices you have. Caffwise is developed and published by Doğukan Kamçı, an individual developer, who is the data controller for the information described here.</p>
+
+    <div class="glance">
+      <div><b>No account</b>We never ask for your name, email address or phone number.</div>
+      <div><b>Your log is yours</b>Drinks, water, check-ins and your plan are stored on your device and, if you turn sync on, in your own private iCloud.</div>
+      <div><b>We never receive Health data</b>Apple Health access is optional, and what the app reads or writes there is never sent to us or anyone else.</div>
+      <div><b>No analytics, no ad tracking</b>The app has no analytics or advertising SDK and never reads the advertising identifier.</div>
+    </div>
+
+    <nav class="toc">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#en-collect">What we collect</a></li>
+        <li><a href="#en-device">What stays on your device</a></li>
+        <li><a href="#en-health">Apple Health</a></li>
+        <li><a href="#en-icloud">iCloud sync</a></li>
+        <li><a href="#en-tracking">No tracking</a></li>
+        <li><a href="#en-providers">Service providers</a></li>
+        <li><a href="#en-legal">Why we may use it (legal bases)</a></li>
+        <li><a href="#en-retention">How long we keep it</a></li>
+        <li><a href="#en-rights">Your choices and rights</a></li>
+        <li><a href="#en-children">Children</a></li>
+        <li><a href="#en-changes">Changes and contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="en-collect">1. What we collect</h2>
+    <p>The only information that reaches a server operated for us concerns purchases.</p>
+
+    <h3>Subscriptions and purchases</h3>
+    <p>Payments are handled entirely by Apple through your Apple Account. We never see or receive your payment card or billing details.</p>
+    <p>To check whether you have Pro and unlock its features, the app uses Adapty. Adapty receives your App Store transactions and purchase status, a random user identifier that the app generates when it is first opened, basic device information (model, iOS version, app version, language and region) and your IP address. Adapty also records which purchase screen you saw, so we can understand which offers work. Adapty never receives your drinks, your caffeine level, your body settings or any Health data.</p>
+
+    <h3>Crash reports from Apple</h3>
+    <p>The app does not include a crash-reporting service. If you have chosen to share analytics with app developers in iOS Settings, Apple may send us anonymous crash reports and usage statistics. This is controlled by Apple and by your setting, not by the app.</p>
+
+    <h2 id="en-device">2. What stays on your device</h2>
+    <ul>
+      <li><b>Your log.</b> The drinks and water you log, your check-ins (focused, jittery, still tired), custom drinks, your Cut Back plan, badges and streaks are stored on your device.</li>
+      <li><b>Your body settings.</b> Bedtime and wake-up time, how fast caffeine leaves you, whether you smoke or take the combined pill, pregnancy, your half-life and your limits are used only to calculate your estimates. They stay on this device and are not synced.</li>
+      <li><b>Widgets, Live Activity, Siri and Shortcuts.</b> The app shares your current level and recent drinks with its own widgets and shortcuts through a container on your device that only Caffwise can read.</li>
+      <li><b>Apple Watch.</b> The watch app gets your level and favourite drinks directly from your paired iPhone through Apple’s watch connection, and sends drinks you log on the watch back to the iPhone. Nothing passes through our servers.</li>
+      <li><b>Notifications.</b> The last-call, check-in, morning and streak reminders are local notifications scheduled on your device. We do not run a push notification server.</li>
+      <li><b>CSV export.</b> The export file leaves the device only when you share it yourself.</li>
+    </ul>
+
+    <h2 id="en-health">3. Apple Health</h2>
+    <p>Connecting Apple Health is optional, and you choose each type of access in Apple’s own permission screen. If you allow it, Caffwise:</p>
+    <ul>
+      <li><b>writes</b> the caffeine in the drinks you log, and, if you choose, the water;</li>
+      <li><b>reads</b> caffeine that other apps saved to Health, so your level is complete; and</li>
+      <li><b>reads</b> your sleep analysis, to show how late caffeine relates to your sleep.</li>
+    </ul>
+    <p>Information from Apple Health is used only inside the app to show you your own estimates and insights. It is never sent to us, to Adapty or to anyone else, never used for advertising or marketing, and never sold. You can change access at any time in <b>Settings → Health → Data Access &amp; Devices → Caffwise</b>.</p>
+
+    <h2 id="en-icloud">4. iCloud sync</h2>
+    <p>If <b>iCloud sync</b> is on in the app and you are signed in to iCloud, your log is kept in sync between your devices through Apple’s iCloud, in your <b>private</b> iCloud database. That data belongs to your Apple Account; we cannot see or access it. Turn sync off in the app at any time; you can delete the stored copy in <b>Settings → [your name] → iCloud</b>.</p>
+
+    <h2 id="en-tracking">5. No tracking</h2>
+    <p>Caffwise does not track you across other companies’ apps or websites. It does not use the advertising identifier (IDFA), does not show the App Tracking Transparency prompt, has no analytics or advertising SDK, does not show ads and does not sell or rent your personal information to anyone.</p>
+
+    <h2 id="en-providers">6. Service providers</h2>
+    <table>
+      <thead><tr><th>Provider</th><th>What it does</th><th>Privacy policy</th></tr></thead>
+      <tbody>
+        <tr><td>Adapty</td><td>Purchase and subscription management</td><td><a href="https://adapty.io/privacy">adapty.io/privacy</a></td></tr>
+        <tr><td>Apple</td><td>Payments, App Store, Apple Health, iCloud</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+      </tbody>
+    </table>
+    <p>These providers may process information on servers outside your country, including in the United States. Where required, such transfers are protected by safeguards such as the European Commission’s Standard Contractual Clauses. We may also disclose information if the law requires it.</p>
+
+    <h2 id="en-legal">7. Why we may use it (legal bases)</h2>
+    <p>If you are in the European Economic Area, the United Kingdom, Türkiye or another place with similar laws, we rely on:</p>
+    <ul>
+      <li><b>Performing our agreement with you</b> to provide the app and the purchase you made (purchase data).</li>
+      <li><b>Our legitimate interests</b> in understanding which purchase offers work, which we keep minimal and not linked to your identity.</li>
+    </ul>
+    <p>Health-related information (your log, body settings and Apple Health data) is processed only on your device and in your own iCloud, because you choose to enter it or to allow access. We do not receive it.</p>
+
+    <h2 id="en-retention">8. How long we keep it</h2>
+    <ul>
+      <li>Purchase data: for as long as needed to provide Pro and to meet legal, tax and accounting obligations.</li>
+      <li>Everything on your device stays until you delete it in the app (<b>Settings → Delete all history</b>) or delete the app. Copies in your iCloud stay until you delete them there.</li>
+    </ul>
+
+    <h2 id="en-rights">9. Your choices and rights</h2>
+    <ul>
+      <li>Change Apple Health access, notifications or iCloud at any time in iOS Settings.</li>
+      <li>Export your whole log as a CSV file (<b>Settings → Export as CSV</b>), or delete it (<b>Settings → Delete all history</b>). Deleting the app removes everything on the device, including the random purchase identifier.</li>
+      <li>Manage or cancel a subscription in <b>Settings → [your name] → Subscriptions</b>.</li>
+    </ul>
+    <p>Depending on where you live, you may have the right to access, correct or delete your personal data, to object to or restrict its use, to data portability, and to withdraw consent. To make a request, contact us at the address below. Because we do not collect your name or email, we may need your help to identify the data that belongs to you (for example, the date of your purchase). You also have the right to complain to your local data protection authority; in Türkiye this is the Personal Data Protection Authority (KVKK).</p>
+
+    <h2 id="en-children">10. Children</h2>
+    <p>Caffwise is not directed at children under 13 (or the minimum age in your country). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+
+    <h2 id="en-changes">11. Changes and contact</h2>
+    <p>If we change this policy, we will update the date at the top of this page, and for significant changes we will let you know in the app.</p>
+    <p>Questions or requests: <a href="mailto:caffwiseapp@gmail.com">caffwiseapp@gmail.com</a></p>
+  </article>
+
+  <article data-lang="tr">
+    <a class="back" href="../">← Yasal</a>
+    <h1>Gizlilik Politikası</h1>
+    <div class="meta">Yürürlük tarihi: 9 Ekim 2026</div>
+
+    <p>Bu politika, Caffwise uygulamasının (“uygulama”, “biz”) hangi bilgileri, neden topladığını ve sahip olduğunuz seçenekleri açıklar. Caffwise, bireysel geliştirici Doğukan Kamçı tarafından geliştirilip yayınlanmaktadır; burada anlatılan veriler bakımından veri sorumlusu Doğukan Kamçı’dır.</p>
+
+    <div class="glance">
+      <div><b>Hesap yok</b>Adınızı, e-posta adresinizi veya telefon numaranızı asla istemeyiz.</div>
+      <div><b>Kayıtlarınız sizindir</b>İçecekler, su, kontroller ve planınız cihazınızda; senkronu açarsanız kendi özel iCloud’unuzda saklanır.</div>
+      <div><b>Sağlık verisi bize gelmez</b>Apple Sağlık erişimi isteğe bağlıdır; uygulamanın orada okuduğu veya yazdığı hiçbir şey bize ya da başkasına gönderilmez.</div>
+      <div><b>Analitik ve reklam takibi yok</b>Uygulamada analitik veya reklam SDK’sı yoktur; reklam kimliği asla okunmaz.</div>
+    </div>
+
+    <nav class="toc">
+      <strong>İçindekiler</strong>
+      <ol>
+        <li><a href="#tr-collect">Topladığımız bilgiler</a></li>
+        <li><a href="#tr-device">Cihazınızda kalanlar</a></li>
+        <li><a href="#tr-health">Apple Sağlık</a></li>
+        <li><a href="#tr-icloud">iCloud senkronu</a></li>
+        <li><a href="#tr-tracking">Takip yok</a></li>
+        <li><a href="#tr-providers">Hizmet sağlayıcılar</a></li>
+        <li><a href="#tr-legal">Hukuki sebepler</a></li>
+        <li><a href="#tr-retention">Saklama süreleri</a></li>
+        <li><a href="#tr-rights">Seçenekleriniz ve haklarınız</a></li>
+        <li><a href="#tr-children">Çocuklar</a></li>
+        <li><a href="#tr-changes">Değişiklikler ve iletişim</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="tr-collect">1. Topladığımız bilgiler</h2>
+    <p>Bizim adımıza işletilen bir sunucuya ulaşan tek bilgi satın almalarla ilgilidir.</p>
+
+    <h3>Abonelikler ve satın almalar</h3>
+    <p>Ödemeler tamamen Apple tarafından, Apple Hesabınız üzerinden yürütülür. Kart veya fatura bilgilerinizi asla görmeyiz ve almayız.</p>
+    <p>Pro’ya sahip olup olmadığınızı kontrol etmek ve özelliklerini açmak için uygulama Adapty’yi kullanır. Adapty; App Store işlemlerinizi ve satın alma durumunuzu, uygulamanın ilk açılışta ürettiği rastgele bir kullanıcı kimliğini, temel cihaz bilgilerini (model, iOS sürümü, uygulama sürümü, dil ve bölge) ve IP adresinizi alır. Adapty ayrıca hangi teklifin işe yaradığını anlayabilmemiz için hangi satın alma ekranını gördüğünüzü kaydeder. Adapty içeceklerinizi, kafein seviyenizi, vücut ayarlarınızı veya herhangi bir Sağlık verisini asla almaz.</p>
+
+    <h3>Apple’dan gelen çökme raporları</h3>
+    <p>Uygulamada bir çökme raporlama hizmeti yoktur. iOS Ayarları’nda analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiyseniz, Apple bize anonim çökme raporları ve kullanım istatistikleri gönderebilir. Bu, uygulama tarafından değil Apple ve sizin ayarınız tarafından yönetilir.</p>
+
+    <h2 id="tr-device">2. Cihazınızda kalanlar</h2>
+    <ul>
+      <li><b>Kayıtlarınız.</b> Kaydettiğiniz içecekler ve su, kontrolleriniz (odaklı, titrek, hâlâ yorgun), özel içecekleriniz, Azaltma planınız, rozetleriniz ve serileriniz cihazınızda saklanır.</li>
+      <li><b>Vücut ayarlarınız.</b> Yatma ve kalkma saatiniz, kafeinin sizden ne hızla atıldığı, sigara veya kombine hap kullanıp kullanmadığınız, hamilelik, yarı ömrünüz ve limitleriniz yalnızca tahminlerinizi hesaplamak için kullanılır. Bu cihazda kalır ve senkronize edilmez.</li>
+      <li><b>Widget’lar, Canlı Etkinlik, Siri ve Kestirmeler.</b> Uygulama, güncel seviyenizi ve son içeceklerinizi kendi widget’ları ve kestirmeleriyle, cihazınızda yalnızca Caffwise’ın okuyabildiği bir alan üzerinden paylaşır.</li>
+      <li><b>Apple Watch.</b> Saat uygulaması seviyenizi ve favori içeceklerinizi, Apple’ın saat bağlantısı üzerinden doğrudan eşlenmiş iPhone’unuzdan alır; saatte kaydettiğiniz içecekleri de iPhone’a geri gönderir. Hiçbir şey sunucularımızdan geçmez.</li>
+      <li><b>Bildirimler.</b> Son çağrı, kontrol, sabah ve seri hatırlatıcıları cihazınızda planlanan yerel bildirimlerdir. Bir anlık bildirim sunucusu işletmiyoruz.</li>
+      <li><b>CSV dışa aktarma.</b> Dışa aktarılan dosya yalnızca siz paylaştığınızda cihazdan çıkar.</li>
+    </ul>
+
+    <h2 id="tr-health">3. Apple Sağlık</h2>
+    <p>Apple Sağlık’ı bağlamak isteğe bağlıdır ve her erişim türünü Apple’ın kendi izin ekranında siz seçersiniz. İzin verirseniz Caffwise:</p>
+    <ul>
+      <li>kaydettiğiniz içeceklerdeki kafeini ve isterseniz suyu Sağlık’a <b>yazar</b>;</li>
+      <li>seviyeniz eksiksiz olsun diye diğer uygulamaların Sağlık’a kaydettiği kafeini <b>okur</b>;</li>
+      <li>geç saatte alınan kafeinin uykunuzla ilişkisini göstermek için uyku analizinizi <b>okur</b>.</li>
+    </ul>
+    <p>Apple Sağlık’tan gelen bilgiler yalnızca uygulama içinde, size kendi tahminlerinizi ve içgörülerinizi göstermek için kullanılır. Bize, Adapty’ye veya başka birine asla gönderilmez, reklam veya pazarlama için kullanılmaz ve satılmaz. Erişimi istediğiniz zaman <b>Ayarlar → Sağlık → Veri Erişimi ve Aygıtlar → Caffwise</b> bölümünden değiştirebilirsiniz.</p>
+
+    <h2 id="tr-icloud">4. iCloud senkronu</h2>
+    <p>Uygulamada <b>iCloud eşzamanlama</b> açıksa ve iCloud’a giriş yaptıysanız, kayıtlarınız Apple’ın iCloud’u üzerinden, <b>özel</b> iCloud veritabanınızda cihazlarınız arasında senkronize edilir. Bu veriler Apple Hesabınıza aittir; biz göremeyiz ve erişemeyiz. Senkronu uygulamadan istediğiniz zaman kapatabilir, saklanan kopyayı <b>Ayarlar → [adınız] → iCloud</b> bölümünden silebilirsiniz.</p>
+
+    <h2 id="tr-tracking">5. Takip yok</h2>
+    <p>Caffwise sizi diğer şirketlerin uygulamaları veya web siteleri arasında takip etmez. Reklam kimliğini (IDFA) kullanmaz, Uygulama Takip Şeffaflığı izin penceresini göstermez, analitik veya reklam SDK’sı içermez, reklam göstermez ve kişisel bilgilerinizi kimseye satmaz veya kiralamaz.</p>
+
+    <h2 id="tr-providers">6. Hizmet sağlayıcılar</h2>
+    <table>
+      <thead><tr><th>Sağlayıcı</th><th>Ne yapar</th><th>Gizlilik politikası</th></tr></thead>
+      <tbody>
+        <tr><td>Adapty</td><td>Satın alma ve abonelik yönetimi</td><td><a href="https://adapty.io/privacy">adapty.io/privacy</a></td></tr>
+        <tr><td>Apple</td><td>Ödemeler, App Store, Apple Sağlık, iCloud</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+      </tbody>
+    </table>
+    <p>Bu sağlayıcılar bilgileri, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz dışındaki sunucularda işleyebilir. Gerektiğinde bu aktarımlar Avrupa Komisyonu’nun Standart Sözleşme Hükümleri gibi güvencelerle korunur. Kanunun gerektirmesi hâlinde bilgileri ayrıca açıklayabiliriz.</p>
+
+    <h2 id="tr-legal">7. Hukuki sebepler</h2>
+    <p>Avrupa Ekonomik Alanı, Birleşik Krallık, Türkiye veya benzer kanunların geçerli olduğu bir yerdeyseniz şu hukuki sebeplere dayanırız:</p>
+    <ul>
+      <li><b>Sizinle yaptığımız sözleşmenin ifası:</b> uygulamayı ve satın aldığınız ürünü sağlamak (satın alma verileri).</li>
+      <li><b>Meşru menfaatimiz:</b> hangi satın alma tekliflerinin işe yaradığını anlamak; bunu asgari düzeyde ve kimliğinizle ilişkilendirmeden yaparız.</li>
+    </ul>
+    <p>Sağlıkla ilgili bilgiler (kayıtlarınız, vücut ayarlarınız ve Apple Sağlık verileri), onları girmeyi veya erişime izin vermeyi siz seçtiğiniz için yalnızca cihazınızda ve kendi iCloud’unuzda işlenir. Bu bilgiler bize gelmez.</p>
+
+    <h2 id="tr-retention">8. Saklama süreleri</h2>
+    <ul>
+      <li>Satın alma verileri: Pro’yu sağlamak ve yasal, vergi ve muhasebe yükümlülüklerini yerine getirmek için gerektiği süre boyunca.</li>
+      <li>Cihazınızdaki her şey, siz uygulamada silene (<b>Ayarlar → Tüm geçmişi sil</b>) veya uygulamayı silene kadar kalır. iCloud’unuzdaki kopyalar siz orada silene kadar kalır.</li>
+    </ul>
+
+    <h2 id="tr-rights">9. Seçenekleriniz ve haklarınız</h2>
+    <ul>
+      <li>Apple Sağlık erişimini, bildirimleri veya iCloud’u istediğiniz zaman iOS Ayarları’ndan değiştirebilirsiniz.</li>
+      <li>Tüm kayıtlarınızı CSV dosyası olarak dışa aktarabilir (<b>Ayarlar → CSV olarak dışa aktar</b>) veya silebilirsiniz (<b>Ayarlar → Tüm geçmişi sil</b>). Uygulamayı silmek, rastgele satın alma kimliği dahil cihazdaki her şeyi kaldırır.</li>
+      <li>Aboneliğinizi <b>Ayarlar → [adınız] → Abonelikler</b> bölümünden yönetebilir veya iptal edebilirsiniz.</li>
+    </ul>
+    <p>Yaşadığınız yere bağlı olarak kişisel verilerinize erişme, onları düzelttirme veya sildirme, işlenmesine itiraz etme veya kısıtlama, veri taşınabilirliği ve rızanızı geri çekme haklarınız olabilir. Talepte bulunmak için aşağıdaki adresten bize ulaşın. Adınızı veya e-postanızı toplamadığımız için size ait verileri belirlemede yardımınıza ihtiyaç duyabiliriz (örneğin satın alma tarihiniz). Ayrıca yerel veri koruma otoritenize şikâyette bulunma hakkınız vardır; Türkiye’de bu, Kişisel Verileri Koruma Kurumu’dur (KVKK).</p>
+
+    <h2 id="tr-children">10. Çocuklar</h2>
+    <p>Caffwise 13 yaşından (veya ülkenizdeki asgari yaştan) küçük çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamayız. Bir çocuğun bize kişisel bilgi verdiğini düşünüyorsanız lütfen bize ulaşın, silelim.</p>
+
+    <h2 id="tr-changes">11. Değişiklikler ve iletişim</h2>
+    <p>Bu politikayı değiştirirsek sayfanın üstündeki tarihi güncelleriz; önemli değişiklikleri uygulama içinde de bildiririz.</p>
+    <p>Sorular veya talepler: <a href="mailto:caffwiseapp@gmail.com">caffwiseapp@gmail.com</a></p>
+  </article>
+
+  <footer>© 2026 Doğukan Kamçı · Caffwise · <a href="../terms/">Terms of Use / Kullanım Koşulları</a></footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function show(lang) {
+      document.documentElement.lang = lang;
+      document.title = lang === 'tr' ? 'Caffwise Gizlilik Politikası' : 'Caffwise Privacy Policy';
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === lang ? 'true' : 'false'); });
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        show(b.dataset.set);
+        try { history.replaceState(null, '', '#' + b.dataset.set); } catch (_) {}
+      });
+    });
+    show(document.documentElement.lang);
+  })();
+</script>
+</body>
+</html>
